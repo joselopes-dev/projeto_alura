@@ -7,8 +7,9 @@ const FILES_TO_CACHE = [
   "./script.js",
   "./data.json",
   "./manifest.json",
-  "icons/icon-192x192.png",
-  "icons/icon-512x512.png"
+  "./icon-192x192.png",
+  "./icon-512x512.png",
+  "./favicon.ico"
 ];
 
 
@@ -37,3 +38,4 @@ self.addEventListener("fetch", (event) => {
       .catch(() => caches.match("./index.html"))
   );
 });
+
