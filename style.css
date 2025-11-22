@@ -1,7 +1,3 @@
-
-
-
-
 /* Fonte e reset */
 * {
     margin: 0;
@@ -113,10 +109,17 @@ body {
     text-decoration: underline;
 }
 
-/* FOOTER */
+/* FOOTER FIXO */
 .footer {
-    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff; /* cor da barra */
+    border-top: 2px solid #ccc; /* linha superior da barra */
+    padding: 10px 0;
     text-align: center;
+    z-index: 999;
 }
 
 .footer ul {
@@ -124,16 +127,20 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .footer a {
     color: #555cff;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .footer a:hover {
     text-decoration: underline;
 }
+
 
 /* ====== ESTILO DOS CARDS ====== */
 .card-container {
@@ -217,3 +224,4 @@ body {
 
     
 }
+
